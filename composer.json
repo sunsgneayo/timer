@@ -1,0 +1,21 @@
+{
+    "name": "sunsgne/timer",
+    "description": "timer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sunsgne\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sunsgne a",
+            "email": "sunsgne@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-pcntl": "*"
+    }
+}
