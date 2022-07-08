@@ -1,6 +1,6 @@
 {
     "name": "sunsgne/timer",
-    "description": "timer",
+    "description": "Lightweight PHP timer implementation",
     "type": "library",
     "license": "MIT",
     "autoload": {

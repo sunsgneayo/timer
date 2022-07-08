@@ -43,7 +43,7 @@ class Timer
      */
     public static function installHandler()
     {
-        pcntl_signal(SIGALRM, array('Timer', 'signalHandler'));
+        pcntl_signal(SIGALRM, array('Sunsgne\Timer', 'signalHandler'));
     }
 
     /**
