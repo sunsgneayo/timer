@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.4",
-        "ext-pcntl": "Let NativeLoop support signal handling. "
+        "ext-pcntl": "*"
     },
     "require-dev": {
         "paulxu-cn/event-ide-helper": "dev-master",
