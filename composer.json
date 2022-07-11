@@ -17,6 +17,14 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.4",
-        "ext-pcntl": "*"
+        "ext-pcntl": "Let NativeLoop support signal handling. "
+    },
+    "require-dev": {
+        "paulxu-cn/event-ide-helper": "dev-master",
+        "symfony/var-dumper": "^5.0"
+    },
+    "suggest": {
+        "ext-event": "For EventLoop. ",
+        "ext-ev": "For EvLoop. "
     }
 }

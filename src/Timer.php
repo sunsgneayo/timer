@@ -13,11 +13,11 @@ class Timer
 
 
     /** @var array 任务集合 */
-    public static $task = [];
+    public static array $task = [];
 
 
     /** @var int 任务隔离时间/秒 */
-    public static $time = 1;
+    public static int $time = 1;
 
     /**
      * 运行定时器
@@ -49,6 +49,7 @@ class Timer
     /**
      * 信号处理函数
      * @return void
+     * @throws TimerException
      * @datetime 2022/7/7 11:31
      * @author zhulianyou
      */
