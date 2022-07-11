@@ -13,7 +13,7 @@ use Event;
 class EventTimer
 {
 
-    protected EventBase $eventBase;
+    protected  EventBase $eventBase;
 
     public function __construct()
     {
@@ -25,15 +25,9 @@ class EventTimer
     }
 
 
-    public  function add(float $interval, callable $func, array $argv = array(), bool $persist = false , bool $delay = false)
+    public  function add(float $delay, callable $func)
     {
-
-        $event = new Event($this->eventBase, -1, \Event::TIMEOUT, function ($argv) use(&$event, $interval, $func){
-            $id = spl_object_hash($event);
-            $func($argv);
-            $event = new Event($this->eventBase, -1, \Event::TIMEOUT | \Event::PERSIST, $func);
-            $event->add($interval);
-        });
+        $event = new Event($this->eventBase, -1, \Event::TIMEOUT | Event::PERSIST, $func);
         $event->add($delay);
     }
 
@@ -53,6 +47,10 @@ class EventTimer
 
     public  function run()
     {
-        $this->eventBase->loop();
+        if (\DIRECTORY_SEPARATOR !== '\\') {
+            $this->eventBase->loop(EventBase::STARTUP_IOCP);
+        }else{
+            $this->eventBase->loop();
+        }
     }
 }
