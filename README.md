@@ -1,5 +1,5 @@
 <div align="center">
-<img width="260px" src="https://cdn.sunsgne.top/logo-i.png" alt="sunsgne"></div>
+<img width="260px" src="https://cdn.sunsgne.top/logo-i.png" alt="sunsgne">
 
 **<p align="center">sunsgne/timer</p>**
 
@@ -12,7 +12,7 @@
 [![Latest Unstable Version](http://poser.pugx.org/sunsgne/timer/v/unstable)](https://packagist.org/packages/sunsgne/timer)
 [![License](http://poser.pugx.org/sunsgne/timer/license)](https://packagist.org/packages/sunsgne/timer)
 [![PHP Version Require](http://poser.pugx.org/sunsgne/timer/require/php)](https://packagist.org/packages/sunsgne/timer)
-
+</div>
 ## Installation
 
 ```
