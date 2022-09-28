@@ -1,8 +1,6 @@
 <div align="center">
 <img width="260px" src="https://cdn.sunsgne.top/logo-i.png" alt="sunsgne"></div>
 
-<div align="center">
-
 **<p align="center">sunsgne/timer</p>**
 
 **<p align="center">🐬 Lightweight PHP timer implementation 🐬</p>**
